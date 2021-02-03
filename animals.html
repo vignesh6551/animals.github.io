@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background-color:rgb(186, 200, 60);
+}    
+h1 {
+    color:#1900ff;
+}
+p {
+    font-size:30px;
+}
+button {
+    color:burlywood;
+}
+</style>
+</head>
+<body>
+<h1 style="text-align:center;"><ins>ABOUT ANIMALS<ins></h1>
+<button type="button" onclick="document.getElementById('demo').innerHTML=Date()">Date and Time</button>
+<hr>
+<button type="button" onclick="myfunction2()">click to expand</button>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p><i>the following image is to click on the more information about the clicking area</i>.</p>
+<img src="animals.jpg" alt="animal planet" usemap="#animals" width="500" height="600">
+<map name="animals">
+<area shape="rect" coords="0,0,250,300" onclick="myfunction()" href="cat.html">
+<area shape="rect" coords="251,301,500,600" onclick="myfunction1()" href="dog.html">
+</map>
+<script>
+function myfunction(){
+    alert("you beat a cat!meow!");
+}
+function myfunction1(){
+    alert("you beat a dog!vow!");
+}
+function myfunction2(){
+    document.getElementById('demo1').innerHTML="hey!man!welcome to my webpage";
+}
+</script>
+<p><b>to know about more click the image.</b></p>
+</body>
+</html>
+
+
